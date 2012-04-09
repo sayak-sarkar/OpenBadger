@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/mozilla/OpenBadger.png?branch=development)](http://travis-ci.org/mozilla/OpenBadger)
+
 <pre>
 ┏━┓┏━┓┏━╸┏┓╻┏┓ ┏━┓╺┳┓┏━╸┏━╸┏━┓
 ┃ ┃┣━┛┣╸ ┃┗┫┣┻┓┣━┫ ┃┃┃╺┓┣╸ ┣┳┛
