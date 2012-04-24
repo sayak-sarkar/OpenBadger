@@ -1,0 +1,26 @@
+#footer {
+  padding: 20px 0;             
+} 
+#footer ul {
+  margin: 0;
+} 
+#footer ul li {                
+  display: inline-block;
+  border-left: 1px solid #999; 
+  padding: 0 10px;             
+  margin: 0;                   
+} 
+#footer ul li:first-child {    
+  border-left: none;           
+  margin-left: 0;              
+  padding-left: 0;             
+}
+#footer h2 {                   
+  display: none;               
+}
+#footer aside {                
+  font-size: 0.85em;           
+}
+#footer aside a {              
+  color: #999;                 
+} 

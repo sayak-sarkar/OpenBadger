@@ -5,14 +5,20 @@
 
 var express = require('express');
 var routes = require('./routes');
+var path = require('path');
+var hogan = require('hogan.js');
+var hoganadapter = require('./lib/hogan-express.js');
 
 var app = module.exports = express.createServer();
 
-// Configuration
+// default view engine
+app.set('view engine', 'hogan.js');
+app.register('hogan.js', hoganadapter.init(hogan));
 
+// Configuration
 app.configure(function(){
   app.set('views', __dirname + '/views');
-  app.set('view engine', 'jade');
+  app.use(express.static(path.join(__dirname, "static")));
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(app.router);
@@ -28,7 +34,6 @@ app.configure('production', function(){
 });
 
 // Routes
-
 app.get('/', routes.index);
 
 app.listen(3000, function(){
