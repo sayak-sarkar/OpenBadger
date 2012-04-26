@@ -52,3 +52,16 @@ exports.org_editor = function(req, res){
     }
   });
 };
+
+/*
+ * Add badges
+ */
+exports.badge = function(req, res){
+  res.render('badge-editor', {
+    user: {
+      attributes: {
+        email: 'ima@user.com'
+      }
+    }
+  });
+};

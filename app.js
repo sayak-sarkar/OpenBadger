@@ -36,6 +36,7 @@ app.configure('production', function(){
 app.get('/', routes.login);
 app.get('/index', routes.index);
 app.get('/org/edit', routes.org_editor);
+app.get('/badge', routes.badge);
 
 
 if (!module.parent) {
