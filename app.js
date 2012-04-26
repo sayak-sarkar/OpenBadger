@@ -35,6 +35,7 @@ app.configure('production', function(){
 // Routes
 app.get('/', routes.login);
 app.get('/index', routes.index);
+app.get('/org/edit', routes.org_editor);
 
 
 if (!module.parent) {

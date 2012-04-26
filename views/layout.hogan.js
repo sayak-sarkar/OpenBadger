@@ -17,14 +17,13 @@
           <a href="http://www.mozilla.org/" id="tabzilla">a mozilla.org joint</a> 
           <ul class="nav">
             {{#user}}
-              <li><a href="#">Home</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   Organization <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">View your page</a></li>
-                  <li><a href="#">Edit your info</a></li>
+                  <li><a href="/index">View your page</a></li>
+                  <li><a href="/org/edit">Edit your info</a></li>
                 </ul>
               </li>
               <li class="dropdown">
@@ -81,7 +80,7 @@
       <!-- third party -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
       <script src="//www.mozilla.org/tabzilla/media/js/tabzilla.js"></script> 
-      <script src="js/bootstrap-2.0.2.min.js"></script>
+      <script src="/js/bootstrap-2.0.2.min.js"></script>
       
       <!-- my libraries -->
       
