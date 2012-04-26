@@ -16,11 +16,30 @@
           <h3><a class="brand" href="/">Open Badger</a></h3>
           <a href="http://www.mozilla.org/" id="tabzilla">a mozilla.org joint</a> 
           <ul class="nav">
-            <li><a href="#">Home</a></li>
+            {{#user}}
+              <li><a href="#">Home</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  Organization <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">View your page</a></li>
+                  <li><a href="#">Edit your info</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  Badges <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Add a badge</a></li>
+                  <li><a href="#">Issue a badge</a></li>
+                </ul>
+            {{/user}}
           </ul>
           {{#user}}
             <ul class="nav pull-right">
-              <li class="user">someone@user.com</li>
+              <li class="user">{{attributes.email}}</li>
               <li><a href="#">Sign Out</a></li>
             </ul>
           {{/user}}
@@ -60,7 +79,9 @@
       
       
       <!-- third party -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
       <script src="//www.mozilla.org/tabzilla/media/js/tabzilla.js"></script> 
+      <script src="js/bootstrap-2.0.2.min.js"></script>
       
       <!-- my libraries -->
       

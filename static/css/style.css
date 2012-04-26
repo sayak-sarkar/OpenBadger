@@ -1,3 +1,11 @@
+.navbar .user {
+  padding: 10px 10px 11px;
+  line-height: 19px;
+  color: #999999;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+} 
+
 #footer {
   padding: 20px 0;             
 } 
