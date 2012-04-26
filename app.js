@@ -34,7 +34,8 @@ app.configure('production', function(){
 });
 
 // Routes
-app.get('/', routes.index);
+app.get('/', routes.login);
+app.get('/index', routes.index);
 
 
 if (!module.parent) {
