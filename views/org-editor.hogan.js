@@ -1,7 +1,7 @@
 <form>
-  <label for="name"></label>
+  <label for="name">Name</label>
   <input type="text" id="name" placeholder="Your organization's name" value="">
-  <label for="description"></label>
+  <label for="description">Description</label>
   <textarea id="description" placeholder="Describe your organization here"></textarea>
   <div>
     <input type="submit" class="btn">
