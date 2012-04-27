@@ -17,6 +17,14 @@ app.configure(function(){
   app.use(express.methodOverride());
   app.use(app.router);
   app.use(express.static(__dirname + '/public'));
+  
+  // pull out the subdomain from a request.
+  app.use(function (request, response, next) {
+    var matches = request.headers.host.match(/([a-z0-9_\-]+)\.(.+)\.(.+)/);
+    var subdomain = matches ? matches[1] : null;
+    request.subdomain = subdomain;
+    next();
+  })
 });
 
 app.configure('development', function(){
