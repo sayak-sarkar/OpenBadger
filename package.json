@@ -18,6 +18,7 @@
   "dependencies": {
     "colors": "*",
     "express": "~2.5.9",
+  , "hogan.js": "~1.0.5"
     "gogo": "~0.0.1",
     "mysql": "~0.9.5"
   },
