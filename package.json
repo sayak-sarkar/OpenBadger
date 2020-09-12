@@ -17,13 +17,13 @@
   },
   "dependencies": {
     "colors": "*",
-    "express": "~2.5.9",
+    "express": "2.5.11",
     "hogan.js": "~1.0.5",
-    "gogo": "~0.0.1",
-    "mysql": "~0.9.5"
+    "gogo": "0.0.1",
+    "mysql": "0.9.6"
   },
   "devDependencies": {
-    "vows": "~0.6.2"
+    "vows": "0.6.4"
   },
   "optionalDependencies": {}
 }
