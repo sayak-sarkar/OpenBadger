@@ -20,7 +20,7 @@
     "express": "2.5.11",
     "hogan.js": "1.0.5-dev",
     "gogo": "0.0.1",
-    "mysql": "2.14.0"
+    "mysql": "2.18.1"
   },
   "devDependencies": {
     "vows": "0.8.3"
